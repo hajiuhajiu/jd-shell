@@ -35,24 +35,24 @@ ContentNewTask=${ShellDir}/new_task
 ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
-WhichDep=$(grep "/jd_shell" "${ShellDir}/.git/config")
-Scripts2URL=https://github.com/m61292734/clone_scripts
+WhichDep=$(grep "/jd-shell" "${ShellDir}/.git/config")
+Scripts2URL=https://github.com/hajiuhajiu02/scripts
 PanelDir=${ShellDir}/panel
 panelpwd=${ConfigDir}/auth.json
 panelpwdSample=${ShellDir}/sample/auth.json
 
 if [[ ${WhichDep} == *github* ]]; then
-  ScriptsURL=https://github.com/m61292734/clone_scripts
-  ShellURL=https://gitee.com/xr2021/jd_shell
+  ScriptsURL=https://github.com/hajiuhajiu02/scripts
+  ShellURL=https://gitee.com/xr2021/jd-shell
 else
-  ScriptsURL=https://github.com/m61292734/clone_scripts
-  ShellURL=https://gitee.com/xr2021/jd_shell
+  ScriptsURL=https://github.com/hajiuhajiu02/scripts
+  ShellURL=https://gitee.com/xr2021/jd-shell
 fi
 
 function SourceUrl_Update {
   if [ -s ${ScriptsDir}/.git/config ]; then
     strAttttt=$(grep "url" ${ScriptsDir}/.git/config)
-    strBttttt="m61292734"
+    strBttttt="hajiuhajiu02"
     if [[ $strAttttt =~ $strBttttt ]]; then
       echo "1"
     else
@@ -62,7 +62,7 @@ function SourceUrl_Update {
 
   if [ -s ${Scripts2Dir}/.git/config ]; then
     strAttttt=$(grep "url" ${Scripts2Dir}/.git/config)
-    strBttttt="m61292734"
+    strBttttt="hajiuhajiu02"
     if [[ $strAttttt =~ $strBttttt ]]; then
       echo "1"
     else
@@ -75,10 +75,10 @@ function SourceUrl_Update {
   if [[ $strAttttt =~ $strBttttt ]]; then
     echo "3"
   else
-    perl -i -pe "s|url \= https\:\/\/github.com\/xr2021\/jd_shell|url \= https\:\/\/gitee.com\/xr2021\/jd_shell|g" ${ShellDir}/.git/config
-    perl -i -pe "s|url \= https\:\/\/gitee.com\/xr2021\/jd_shell|url \= https\:\/\/gitee.com\/xr2021\/jd_shell|g" ${ShellDir}/.git/config
-    perl -i -pe "s|url \= http\:\/\/github.com\/xr2021\/jd_shell|url \= https\:\/\/gitee.com\/xr2021\/jd_shell|g" ${ShellDir}/.git/config
-    perl -i -pe "s|url \= http\:\/\/gitee.com\/xr2021\/jd_shell|url \= https\:\/\/gitee.com\/xr2021\/jd_shell|g" ${ShellDir}/.git/config
+    perl -i -pe "s|url \= https\:\/\/github.com\/xr2021\/jd-shell|url \= https\:\/\/gitee.com\/xr2021\/jd-shell|g" ${ShellDir}/.git/config
+    perl -i -pe "s|url \= https\:\/\/gitee.com\/xr2021\/jd-shell|url \= https\:\/\/gitee.com\/xr2021\/jd-shell|g" ${ShellDir}/.git/config
+    perl -i -pe "s|url \= http\:\/\/github.com\/xr2021\/jd-shell|url \= https\:\/\/gitee.com\/xr2021\/jd-shell|g" ${ShellDir}/.git/config
+    perl -i -pe "s|url \= http\:\/\/gitee.com\/xr2021\/jd-shell|url \= https\:\/\/gitee.com\/xr2021\/jd-shell|g" ${ShellDir}/.git/config
   #  sed -i "s/url \= https\:\/\/github.com\/xr2021\/jd_shell/url \= https\:\/\/gitee.com\/xr2021\/jd_shell/g" ${ShellDir}/.git/config
   #  sed -i "s/url \= https\:\/\/gitee.com\/xr2021\/jd_shell/url \= https\:\/\/gitee.com\/xr2021\/jd_shell/g" ${ShellDir}/.git/config
   fi
