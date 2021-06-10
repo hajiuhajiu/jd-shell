@@ -1,8 +1,8 @@
 FROM node:lts-alpine
 LABEL maintainer="wwwm>"
-ARG JD_BASE_URL=https://gitee.com/xr2021/jd_shell
+ARG JD_BASE_URL=https://github.com/hajiuhajiu02/jd-shell
 ARG JD_BASE_BRANCH=v3
-ARG JD_SCRIPTS_URL=https://github.com/m61292734/clone_scripts
+ARG JD_SCRIPTS_URL=https://github.com/hajiuhajiu02/scripts
 ARG JD_SCRIPTS_BRANCH=master
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
