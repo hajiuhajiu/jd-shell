@@ -4,7 +4,7 @@
 #
 clear
 
-DockerImage="xr2021/jd618:latest"
+DockerImage="xr2021/jd_shell:v5"
 ShellName=$0
 ShellDir=$(cd "$(dirname "$0")";pwd)
 ContainerName=""
@@ -204,7 +204,7 @@ if [ $NewImage = true ]; then
     if [ $GetImageType = "Local" ]; then
         rm -fr $WorkDir
         mkdir -p $WorkDir
-        wget -q https://gitee.com/jd-base/docker/Dockerfile -O $WorkDir/Dockerfile
+        wget -q https://github.com/hajiuhajiu02/jd-shell/tree/v3/docker/Dockerfile -O $WorkDir/Dockerfile
         sed -i 's,github.com,github.com.cnpmjs.org,g' $WorkDir/Dockerfile
         sed -i 's,npm install,npm install --registry=https://registry.npm.taobao.org,g' $WorkDir/Dockerfile
         docker build -t $DockerImage $WorkDir > $ShellDir/build_jd_image.log
