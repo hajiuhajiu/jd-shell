@@ -1,8 +1,7 @@
 name: Built_JD_Shell_To_Docker
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '01 0-23/2 * * *'
+ 
 
 jobs:
   docker:
@@ -30,7 +29,7 @@ jobs:
           context: ./docker/
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7,linux/arm/v6,linux/ppc64le,linux/s390x
           push: true
-          tags: xr2021/jd_shell:v4
+          tags: xr2021/jd_shell:v5
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@main
         with:
