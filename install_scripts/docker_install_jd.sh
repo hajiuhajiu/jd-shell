@@ -198,7 +198,7 @@ if [ $NewImage = true ]; then
     if [ $HasImage = true ]; then
         docker stop jd
         docker rm jd
-        docker rmi $(docker images xr2021/jd618 -q)
+        docker rmi $(docker images xr2021/jd_shell:v5 -q)
         # docker image rm -f $DockerImage
     fi
     if [ $GetImageType = "Local" ]; then
