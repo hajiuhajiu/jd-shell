@@ -4,6 +4,8 @@ ARG JD_BASE_URL=https://github.com/hajiuhajiu02/jd-shell
 ARG JD_BASE_BRANCH=v3
 ARG JD_SCRIPTS_URL=https://github.com/hajiuhajiu02/scripts
 ARG JD_SCRIPTS_BRANCH=master
+ARG JD_SCRIPTS2_URL=https://github.com/hajiuhajiu02/scripts
+ARG JD_SCRIPTS2_BRANCH=master
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
     LANG=zh_CN.UTF-8 \
@@ -35,7 +37,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && cd ${JD_DIR}/scripts \
     && npm install \
     && npm install -g pm2 \
-    && git clone -b ${JD_SCRIPTS_BRANCH} ${JD_SCRIPTS_URL} ${JD_DIR}/scripts \
+    && git clone -b ${JD_SCRIPTS2_BRANCH} ${JD_SCRIPTS2_URL} ${JD_DIR}/scripts2 \
     && rm -rf /root/.npm
 WORKDIR ${JD_DIR}
 ENTRYPOINT bash ${JD_DIR}/docker/docker-entrypoint.sh
