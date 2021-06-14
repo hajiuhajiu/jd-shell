@@ -1,5 +1,5 @@
 ENV_PATH=
-
+#0614 更新
 # 更新lxk0301大佬的js脚本和shell脚本，并替换相关参数：
 22 * * * * bash MY_PATH/git_pull.sh >> MY_PATH/log/git_pull.log 2>&1
 
@@ -70,25 +70,15 @@ ENV_PATH=
 11 */6 * * * bash MY_PATH/jd.sh jd_superMarket
 36 0-23/4 * * * bash MY_PATH/jd.sh jd_syj
 55 23 * * * bash MY_PATH/jd.sh jd_unsubscribe
-20 11 * * * bash MY_PATH/jd.sh adolf_newInteraction
 19 11 * * * bash MY_PATH/jd.sh adolf_pk
-18 11 * * * bash MY_PATH/jd.sh awywdolf_martin
 17 11 * * * bash MY_PATH/jd.sh diy_adolf_flp
 16 11 * * * bash MY_PATH/jd.sh diy_adolf_oneplus
-15 11 * * * bash MY_PATH/jd.sh diy_adolf_urge
-12 11 * * * bash MY_PATH/jd.sh jay_freshgoods
-11 11 * * * bash MY_PATH/jd.sh jay_member_olb
 51 10 * * * bash MY_PATH/jd.sh jd_family
 35 9 * * * bash MY_PATH/jd.sh jd_xtg_help
-26 9 * * * bash MY_PATH/jd.sh jdJxncTokens
-25 9 * * * bash MY_PATH/jd.sh jdPetShareCodes
-24 9 * * * bash MY_PATH/jd.sh jdPlantBeanShareCodes
-22 13 * * * bash MY_PATH/jd.sh jdSuperMarketShareCodes
 21 11 * * * bash MY_PATH/jd.sh jdtqz
 16 9 * * * bash MY_PATH/jd.sh long_hby_lottery
-15 9 * * * bash MY_PATH/jd.sh monk_shop_add_to_car
 28 9 * * * bash MY_PATH/jd.sh wen-superBrand
-37 9 * * * bash MY_PATH/jd.sh z_shop_captain
 26 9 * * * bash MY_PATH/jd.sh zooBaojiexiaoxiaole
 15 9 * * * bash MY_PATH/jd.sh zooLongzhou
 58 5 * * * bash MY_PATH/jd.sh jd_xtg
+22 6 * * * bash MY_PATH/jd.sh jd_ShopSign
