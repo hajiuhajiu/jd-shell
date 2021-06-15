@@ -1,5 +1,5 @@
 ENV_PATH=
-#0614 更新
+#0615 更新
 # 更新lxk0301大佬的js脚本和shell脚本，并替换相关参数：
 22 * * * * bash MY_PATH/git_pull.sh >> MY_PATH/log/git_pull.log 2>&1
 
@@ -63,6 +63,7 @@ ENV_PATH=
 1 1 * * * bash MY_PATH/jd.sh jd_redPacket
 27 8 * * * bash MY_PATH/jd.sh jd_sgmh
 10 0 * * * bash MY_PATH/jd.sh jd_shop
+1 0 * * * bash MY_PATH/jd.sh jd_try
 16 6,23 * * * bash MY_PATH/jd.sh jd_small_home
 40 0,8 * * * bash MY_PATH/jd.sh jd_speed_redpocke
 48 0,12,18 * * * bash MY_PATH/jd.sh jd_speed_sign
@@ -82,3 +83,5 @@ ENV_PATH=
 15 9 * * * bash MY_PATH/jd.sh zooLongzhou
 58 5 * * * bash MY_PATH/jd.sh jd_xtg
 22 6 * * * bash MY_PATH/jd.sh jd_ShopSign
+22 8 * * * bash MY_PATH/jd.sh jd_limitBox
+22 9 * * * bash MY_PATH/jd.sh jd_qqtmy
