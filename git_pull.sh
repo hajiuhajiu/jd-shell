@@ -438,7 +438,7 @@ function panelinit {
   sleep 1
   if [ ! -s ${panelpwd} ]; then
     cp -f ${panelpwdSample} ${panelpwd}
-    echo -e "检测到未设置密码，用户名：admin，密码：adminadmin\n"
+    echo -e "检测到未设置密码，用户名：admin，密码：admin5678\n"
   fi
 }
 
