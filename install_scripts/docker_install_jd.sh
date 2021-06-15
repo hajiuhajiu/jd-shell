@@ -172,7 +172,7 @@ Need_Dir() {
     if [ "$need_dir" = "2" ]; then
         log "选择了不映射文件目录"
     else
-        echo -e "\n\e[33m请输入配置文件保存的绝对路径,直接回车为 $ShellDir/jd-docker :\e[0m"
+        echo -e "\n\e[33m请输入配置文件保存的绝对路径,建议默认,或config,直接回车为 $ShellDir/jd-docker :\e[0m"
         read jd_dir
         if [ -z "$jd_dir" ]; then
             JdDir=$ShellDir/jd-docker
