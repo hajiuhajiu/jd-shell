@@ -86,6 +86,55 @@ ENV_PATH=
 22 8 * * * bash MY_PATH/jd.sh jd_limitBox
 22 9 * * * bash MY_PATH/jd.sh jd_qqtmy
 36 0-23/4 * * * bash MY_PATH/jd.sh jd_try
+22 4 * * * bash MY_PATH/jd.sh  jd_Newsyj
+23 4 * * * bash MY_PATH/jd.sh  jd_ShopSign
+24 4 * * * bash MY_PATH/jd.sh  jd_blueCoin20
+25 4 * * * bash MY_PATH/jd.sh  jd_cash_exchange
+26 4 * * * bash MY_PATH/jd.sh  jd_city
+27 4 * * * bash MY_PATH/jd.sh  jd_crazy_joy_coin
+28 4 * * * bash MY_PATH/jd.sh  jd_daydlt
+29 4 * * * bash MY_PATH/jd.sh  jd_dphby
+30 4 * * * bash MY_PATH/jd.sh  jd_dpqd
+31 4 * * * bash MY_PATH/jd.sh  jd_dpqd2
+32 4 * * * bash MY_PATH/jd.sh  jd_factory
+33 4 * * * bash MY_PATH/jd.sh  jd_fanslove
+4 5 * * * bash MY_PATH/jd.sh  jd_friend
+5 5 * * * bash MY_PATH/jd.sh  jd_gcip
+6 5 * * * bash MY_PATH/jd.sh  jd_getFanslove
+7 5 * * * bash MY_PATH/jd.sh  jd_global
+8 5 * * * bash MY_PATH/jd.sh  jd_half_redrain
+9 5 * * * bash MY_PATH/jd.sh  jd_jbczy
+10 5 * * * bash MY_PATH/jd.sh  jd_jintie
+11 5 * * * bash MY_PATH/jd.sh  jd_jintie_wx
+12 5 * * * bash MY_PATH/jd.sh  jd_joy500
+14 5 * * * bash MY_PATH/jd.sh  jd_joy_steal
+15 5 * * * bash MY_PATH/jd.sh  jd_jxd
+16 5 * * * bash MY_PATH/jd.sh  jd_jxfactory
+17 5 * * * bash MY_PATH/jd.sh  jd_live_lottery_social
+18 5 * * * bash MY_PATH/jd.sh  jd_mcxhd_brandcity
+19 5 * * * bash MY_PATH/jd.sh  jd_monk_pasture
+20 5 * * * bash MY_PATH/jd.sh  jd_necklace
+22 5 * * * bash MY_PATH/jd.sh  jd_opencard
+23 5 * * * bash MY_PATH/jd.sh  jd_petTreasureBox
+24 5 * * * bash MY_PATH/jd.sh  jd_plus_bean
+25 5 * * * bash MY_PATH/jd.sh  jd_priceProtect
+26 5 * * * bash MY_PATH/jd.sh  jd_s5g
+27 5 * * * bash MY_PATH/jd.sh  jd_shake
+28 5 * * * bash MY_PATH/jd.sh  jd_shop_follow_sku
+29 5 * * * bash MY_PATH/jd.sh  jd_shop_lottery
+30 5 * * * bash MY_PATH/jd.sh  jd_speed
+31 5 * * * bash MY_PATH/jd.sh  jd_split
+32 5 * * * bash MY_PATH/jd.sh  jd_super_box
+33 5 * * * bash MY_PATH/jd.sh  jd_super_redrain
+34 5 * * * bash MY_PATH/jd.sh  jd_sxj
+35 5 * * * bash MY_PATH/jd.sh  jd_tcl
+36 0-23/4 * * * bash MY_PATH/jd.sh  jd_try
+37 5 * * * bash MY_PATH/jd.sh  jd_unbind
+39 5 * * * bash MY_PATH/jd.sh  jd_wechat_sign
+40 5 * * * bash MY_PATH/jd.sh  jx_cfdtx
+41 5 * * * bash MY_PATH/jd.sh  jx_sign
+42 5 * * * bash MY_PATH/jd.sh  jx_tokens
+
 
 
 
