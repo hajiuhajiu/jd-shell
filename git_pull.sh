@@ -2,7 +2,7 @@
 
 ## Author: www
 ## Source: https://g11
-## Modified： 2021-03-29
+## Modified： 2021-06-15
 ## Version： v3.6.3
 
 ## 文件路径、脚本网址、文件版本以及各种环境的判断
@@ -444,7 +444,7 @@ function panelinit {
 
 ## 在日志中记录时间与路径
 echo -e ''
-echo -e "+----------------- 开 始 执 行 更 新 脚 本 -----------------+"
+echo -e "+----------------- 开始执行更新脚本 -----------------+"
 echo -e ''
 echo -e "   活动脚本目录：${ScriptsDir}"
 echo -e ''
@@ -456,7 +456,8 @@ SourceUrl_Update
 fix_files
 #fix_config
 ## 更新shell脚本、检测配置文件版本并将sample/config.sh.sample复制到config目录下
-Git_PullShell && Update_Cron
+#Git_PullShell && Update_Cron
+Update_Cron
 VerConfSample=$(grep " Version: " ${FileConfSample} | perl -pe "s|.+v((\d+\.?){3})|\1|")
 [ -f ${FileConf} ] && VerConf=$(grep " Version: " ${FileConf} | perl -pe "s|.+v((\d+\.?){3})|\1|")
 if [ ${ExitStatusShell} -eq 0 ]; then
@@ -487,8 +488,8 @@ if [[ ${ExitStatusScripts} -eq 0 ]]; then
   Del_Cron
   Add_Cron
   ExtraShell
-  Run_All
   panelinit
+  Run_All  
   echo -e "活动脚本更新完成......\n"
 else
   echo -e "\033[31m活动脚本更新失败，请检查原因或再次运行 git_pull.sh ......\033[0m"
