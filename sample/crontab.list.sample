@@ -88,3 +88,5 @@ ENV_PATH=
 36 0-23/4 * * * bash MY_PATH/jd.sh jd_try
 
 
+
+
