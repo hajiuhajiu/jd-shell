@@ -3,7 +3,7 @@
 xianyu或pdd 买一个fei xun 的N1盒子,大约140左右, 要求卖家装上openwrt系统, 只要电源线盒子即可，网线自备，然后电脑通过网线连盒子,盒子可以连无线路由器. 电脑下载putty,用putty连接盒子 地址192.168.1.1 端口 22
 输入下面命令,按提示操作
 
-jd-shell 安装 两个命令:
+jd-shell 一键安装命令:
 
 wget -q https://gitee.com/xr2021/jd-shell/raw/v3/install_scripts/docker_install_jd.sh -O docker_install_jd.sh && chmod +x docker_install_jd.sh && bash docker_install_jd.sh
 
