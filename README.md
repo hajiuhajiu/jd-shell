@@ -24,4 +24,9 @@ bash jd.sh panelon
 
 回浏览器输入192.168.1.1:5678  用户名密码 admin/admin5678 不对的话是admin/amdin5678 添加cookie 设定运行时间，
 
+为方便管理，建议安装portainer：
+
+
+docker pull portainer/portainer
+
 
