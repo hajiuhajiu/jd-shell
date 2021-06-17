@@ -28,7 +28,7 @@ if [ ! -s ${JD_DIR}/config/auth.json ]; then
 fi
 
 echo -e "======================2. 更新源代码========================\n"
-bash ${JD_DIR}/git_pull.sh
+#bash ${JD_DIR}/git_pull.sh
 echo
 
 
