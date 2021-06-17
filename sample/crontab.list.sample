@@ -2,7 +2,7 @@ ENV_PATH=
 #0615 更新
 # 更新lxk0301大佬的js脚本和shell脚本，并替换相关参数：
 #22 * * * * bash MY_PATH/git_pull.sh >> MY_PATH/log/git_pull.log 2>&1
-0 10 * *  * bash /root/jd/scripts/pull.sh >/dev/null 2>&1
+01 10 * *  * bash /root/jd/pull.sh >/dev/null 2>&1
 # 删除 RmLogDaysAgo 指定天数以前的旧日志，本行为不记录日志：
 57 13 * * * bash MY_PATH/rm_log.sh >/dev/null 2>&1
 
