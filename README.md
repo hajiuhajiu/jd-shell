@@ -10,7 +10,7 @@ wget -q https://gitee.com/xr2021/jd-shell/raw/v3/install_scripts/docker_install_
 建议所有选项选默认，完成后
 
 
-进控制面板 盒子ip:5678 通常 192.168.1.1:5678  用户名密码 admin/admin5678 不对的话是admin/amdinadmin 添加cookie 设定运行时间，运行后获得互助码，通过设置自行填写。
+进控制面板 盒子ip:5678 通常 192.168.1.1:5678  用户名密码 admin/admin5678 前面的版本是admin/amdinadmin 添加cookie 设定运行时间，运行后获得互助码，通过设置自行填写。
 
 如果控制面板无法进入，需要额外设置， 可以手动进入容器：
 docker exec -it jd /bin/bash
@@ -22,9 +22,9 @@ bash jd.sh panelon
 
 
 
-回浏览器输入192.168.1.1:5678  用户名密码 admin/admin5678 不对的话是admin/amdin5678 添加cookie 设定运行时间，
+回浏览器输入192.168.1.1:5678  用户名密码 admin/admin5678 前面的版本是admin/amdinadmin 添加cookie 设定运行时间，
 
-为方便管理，建议安装portainer：
+为方便管理，建议安装portainer，用下面命令安装，：
 
 
 docker pull portainer/portainer
