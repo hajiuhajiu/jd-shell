@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## Modified:2021-3-26
-echo "lan-tianxiang暂无推荐的第三方脚本"
+echo "暂无推荐的第三方脚本"
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
 # author_list="shylocks whyour 799953468 i-chenzhe"
@@ -11,10 +11,8 @@ echo "lan-tianxiang暂无推荐的第三方脚本"
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 
 ## 目前使用本人收集的脚本库项目用于代替 CDN 加速
-#scripts_base_url_1=https://gitee.com/highdimen/jd_scripts/raw/master/
-#scripts_base_url_2=https://gitee.com/highdimen/jd_scripts/raw/master/
-#scripts_base_url_3=https://gitee.com/highdimen/jd_scripts/raw/master/
-#scripts_base_url_4=https://gitee.com/highdimen/jd_scripts/raw/master/
+#scripts_base_url_1=https://gitee.com/xr2021/scripts/raw/master/
+
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
