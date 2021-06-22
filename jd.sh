@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Author: lan-tianxiang
+
 ## Source: https:/uuu
 ## Modified： 2021-03-31
 ## Version： v3.15.0
