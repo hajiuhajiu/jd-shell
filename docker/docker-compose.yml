@@ -37,7 +37,7 @@ services:
 
   # 第3个容器，以此类推
   jd3:
-    image: xr2021/jd_shell:gitee  # 如果要从gitee更新脚本，则为：lan-tianxiang/jd_shell:gitee
+    image: xr2021/jd_shell:gitee  # 
     container_name: jd3
     restart: always
     tty: true
