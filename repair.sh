@@ -32,7 +32,7 @@ ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 WhichDep=$(grep "/jd_shell" "${ShellDir}/.git/config")
-Scripts2URL=https://github.com/m61292734/clone_scripts
+Scripts2URL=https://github.com/hajiuhajiu02/scripts
 
 cp ${FileConf} $(dirname ${ShellDir})/config.sh
 pkill -9 node
