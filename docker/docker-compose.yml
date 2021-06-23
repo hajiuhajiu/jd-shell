@@ -2,7 +2,7 @@ version: "3.0"
 services:
   # 第1个容器
   jd1:
-    image: xr2021/jd_shell:gitee  # 
+    image: xr2021/jd_shell:v5  # 
     container_name: jd1
     restart: always
     tty: true
@@ -20,7 +20,7 @@ services:
 
   # 第2个容器
   jd2:
-    image: xr2021/jd_shell:gitee  # 如果要从gitee更新脚本，
+    image: xr2021/jd_shell:v5  # 如果要从gitee更新脚本，
     container_name: jd2
     restart: always
     tty: true
@@ -37,7 +37,7 @@ services:
 
   # 第3个容器，以此类推
   jd3:
-    image: xr2021/jd_shell:gitee  # 
+    image: xr2021/jd_shell:v5  # 
     container_name: jd3
     restart: always
     tty: true
