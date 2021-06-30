@@ -5,7 +5,7 @@ xianyu或pdd 买一个fei xun 的N1盒子,大约140左右, 要求卖家装上ope
 
 jd-shell 一键安装命令:
 
-wget -q https://github.com/hajiuhajiu/jd-shell/raw/v3/install_scripts/docker_install_jd.sh -O docker_install_jd.sh && chmod +x docker_install_jd.sh && bash docker_install_jd.sh
+wget https://gitee.com/xr2021/jd-shell/raw/v3/install_scripts/docker_install_jd.sh -O docker_install_jd.sh && chmod +x docker_install_jd.sh && bash docker_install_jd.sh
 
 建议所有选项选默认，完成后
 
