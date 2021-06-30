@@ -39,24 +39,21 @@ function Update_Cron {
 function Git_PullShell {
   echo -e "更新shell...\n"
   cd ${ShellDir}
+  git config http.sslVerify "false"
+  git config --global http.sslVerify "false"
   git fetch --all
   ExitStatusShell=$?
   git reset --hard origin/v3
   echo
 }
 
-## 克隆scripts
-function Git_CloneScripts {
-  echo -e "克隆脚本\n"
-  git clone -b master ${ScriptsURL} ${ScriptsDir}
-  ExitStatusScripts=$?
-  echo
-}
 
 ## 更新scripts
 function Git_PullScripts {
   echo -e "更新脚本\n"
   cd ${ScriptsDir}
+  git config http.sslVerify "false"
+  git config --global http.sslVerify "false"
   git fetch --all
   ExitStatusScripts=$?
   git reset --hard origin/master
