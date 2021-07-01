@@ -4,7 +4,7 @@
 #
 clear
 
-DockerImage="xr2021/jd-shell:v0"   #可以换其它版本， "xr2021/jd_shell:v5"支持多种处理器
+DockerImage="xr2021/jd-shell:v5"   #可以换其它版本， "xr2021/jd_shell:v5"支持多种处理器
 ShellName=$0
 ShellDir=$(cd "$(dirname "$0")";pwd)
 ContainerName=""
