@@ -88,8 +88,6 @@ ENV_PATH=
 27 8 * * * bash MY_PATH/jd.sh jd_sgmh
 26 5 * * * bash MY_PATH/jd.sh jd_shake
 10 0 * * * bash MY_PATH/jd.sh jd_shop
-22 2 * * * bash MY_PATH/jd.sh jd_shop_follow_sku
-12 1 * * * bash MY_PATH/jd.sh jd_shop_lottery
 58 8 * * * bash MY_PATH/jd.sh jd_ShopSign
 16 6,23 * * * bash MY_PATH/jd.sh jd_small_home
 10 0,1 * * * bash MY_PATH/jd.sh jd_speed
