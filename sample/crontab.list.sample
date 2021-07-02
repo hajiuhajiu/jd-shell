@@ -70,7 +70,7 @@ ENV_PATH=
 0 6,9,12,18 * * * bash MY_PATH/jd.sh jd_jxnc
 23 1 * * * bash MY_PATH/jd.sh jd_kd
 10-20/5 12 * * * bash MY_PATH/jd.sh jd_live
-0 3,9,18 * * * bash MY_PATH/jd.shjd_jxlhb
+0 3,9,18 * * * bash MY_PATH/jd.sh jd_jxlhb
 28 14 * * * bash MY_PATH/jd.sh  jd_live_lottery_social
 0,30 0-23/1 * * * bash MY_PATH/jd.sh jd_live_redrain
 22 0,12,18 * * * bash MY_PATH/jd.sh jd_lotteryMachine
