@@ -24,7 +24,6 @@ ENV_PATH=
 33 0-23/4 * * * bash MY_PATH/jd.sh jd_bean_home
 0 0 * * * bash MY_PATH/jd.sh jd_bean_sign
 1 7,12,19 * * * bash MY_PATH/jd.sh jd_beauty
-0 * * * * bash MY_PATH/jd.sh jd_big_winner
 0 0 * * * bash MY_PATH/jd.sh jd_blueCoin
 0 0 * * * bash MY_PATH/jd.sh jd_blueCoin20
 7 8,12,18 * * * bash MY_PATH/jd.sh jd_bookshop
@@ -40,7 +39,6 @@ ENV_PATH=
 13 1,22,23 * * * bash MY_PATH/jd.sh jd_daily_lottery
 35 2 * * * bash MY_PATH/jd.sh  jd_daydlt
 18 1,10 * * * bash MY_PATH/jd.sh jd_djjl
-18 1,10 * * * bash MY_PATH/jd.sh jd_djjl.js
 13 10 * * * bash MY_PATH/jd.sh jd_dpqd
 8 9 * * * bash MY_PATH/jd.sh jd_dpqd2
 20 * * * * bash MY_PATH/jd.sh jd_dreamFactory
@@ -108,5 +106,4 @@ ENV_PATH=
 18 3 * * * bash MY_PATH/jd.sh jx_sign
 0 0-23/1 * * * bash MY_PATH/jd.sh jd_super_redrain
 22 3 * * * bash MY_PATH/jd.sh jd_tyt
-22 22 * * * bash /root/jd/scripts/jd_djjl.js >> log/jd_djjl.log 2>&1
 29 3 * * * bash MY_PATH/jd.sh jd_ddo_pk.js >> log/jd_ddo_pk.log 2>&1
