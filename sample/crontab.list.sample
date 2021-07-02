@@ -95,7 +95,6 @@ ENV_PATH=
 10 0,1 * * * bash MY_PATH/jd.sh jd_speed
 40 0,8 * * * bash MY_PATH/jd.sh jd_speed_redpocke
 48 0,12,18 * * * bash MY_PATH/jd.sh jd_speed_sign
-0 1,21 * * * bash MY_PATH/jd.sh jd_star_shop
 0 0-23 * * * bash MY_PATH/jd.sh  jd_super_redrain
 11 */6 * * * bash MY_PATH/jd.sh jd_superMarket
 36 0-23/4 * * * bash MY_PATH/jd.sh jd_syj
