@@ -102,4 +102,4 @@ ENV_PATH=
 1 0 * * * bash MY_PATH/jd.sh jx_cfdtx
 18 3 * * * bash MY_PATH/jd.sh jx_sign
 0 0-23/1 * * * bash MY_PATH/jd.sh jd_super_redrain
-29 3 * * * bash MY_PATH/jd.sh jd_ddo_pk.js >> log/jd_ddo_pk.log 2>&1
+
