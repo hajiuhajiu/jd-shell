@@ -72,7 +72,7 @@ ENV_PATH=
 28 14 * * * bash MY_PATH/jd.sh jd_live_lottery_social
 0,30 0-23/1 * * * bash MY_PATH/jd.sh jd_live_redrain
 22 0,12,18 * * * bash MY_PATH/jd.sh jd_lotteryMachine
-38 13 * * * bash MY_PATH/jd.sh jd_market_lottery
+1 0,8 * * * bash MY_PATH/jd.sh jd_market_lottery
 28 15 * * * bash MY_PATH/jd.sh jd_mgold
 0 */4 * * * bash MY_PATH/jd.sh jd_mohe
 0 */2 * * * bash MY_PATH/jd.sh jd_moneyTree
