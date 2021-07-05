@@ -74,9 +74,9 @@ function getCookie(response) {
     s_pin = s_pin.substring(s_pin.indexOf("=") + 1, s_pin.indexOf(";"))
     cookies = "TrackerID=" + TrackerID + "; pt_key=" + pt_key + "; pt_pin=" + pt_pin + "; pt_token=" + pt_token + "; pwdt_id=" + pwdt_id + "; s_key=" + s_key + "; s_pin=" + s_pin + "; wq_skey="
     var userCookie = "pt_key=" + pt_key + ";pt_pin=" + pt_pin + ";";
-    console.log("\n############  登录成功，获取到 Cookie  #############\n\n");
+    console.log("\n############  登录成功，获取到 Cookie  #############\n");
     console.log('Cookie1="' + userCookie + '"\n');
-    console.log("\n####################################################\n\n");
+    console.log("\n####################################################\n");
     return userCookie;
 }
 
@@ -93,7 +93,7 @@ async function step1() {
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'zh-cn',
                 'Referer': 'https://plogin.m.jd.com/login/login?appid=300&returnurl=https://wq.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=https://home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
+                'User-Agent': 'jdapp;android;9.3.5;10;2346663656561603-4353564623932316;network/wifi;model/ONEPLUS A5010;addressid/138709979;aid/2dfceea045ed292a;oaid/;osVer/29;appBuild/86390;partner/jingdong;eufv/1;Mozilla/5.0 (Linux; Android 10; ONEPLUS A5010 Build/QKQ1.191014.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045230 Mobile Safari/537.36',
                 'Host': 'plogin.m.jd.com'
             }
         });
@@ -126,7 +126,7 @@ async function step2() {
                 'Accept': 'application/json, text/plain, */*',
                 'Cookie': cookies,
                 'Referer': 'https://plogin.m.jd.com/login/login?appid=300&returnurl=https://wqlogin2.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=//home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
+                'User-Agent': 'jdapp;android;9.3.5;10;2346663656561603-4353564623932316;network/wifi;model/ONEPLUS A5010;addressid/138709979;aid/2dfceea045ed292a;oaid/;osVer/29;appBuild/86390;partner/jingdong;eufv/1;Mozilla/5.0 (Linux; Android 10; ONEPLUS A5010 Build/QKQ1.191014.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045230 Mobile Safari/537.36',
                 'Host': 'plogin.m.jd.com',
             }
         });
@@ -164,7 +164,7 @@ async function checkLogin() {
                 'Connection': 'Keep-Alive',
                 'Content-Type': 'application/x-www-form-urlencoded; Charset=UTF-8',
                 'Accept': 'application/json, text/plain, */*',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
+                'User-Agent': 'jdapp;android;9.3.5;10;2346663656561603-4353564623932316;network/wifi;model/ONEPLUS A5010;addressid/138709979;aid/2dfceea045ed292a;oaid/;osVer/29;appBuild/86390;partner/jingdong;eufv/1;Mozilla/5.0 (Linux; Android 10; ONEPLUS A5010 Build/QKQ1.191014.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045230 Mobile Safari/537.36',
             }
         });
 
@@ -179,15 +179,10 @@ async function checkLogin() {
 }
 
 
-
 /**
  * 检查 config.sh 以及 config.sh.sample 文件是否存在
  */
 function checkConfigFile() {
-    if (!fs.existsSync(crontabFile)) {
-        console.error('脚本启动失败，cookie.sh 文件不存在！');
-        process.exit(1);
-    }
     if (!fs.existsSync(sampleFile)) {
         console.error('脚本启动失败，config.sh.sample 文件不存在！');
         process.exit(1);
