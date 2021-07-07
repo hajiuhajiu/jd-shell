@@ -81,7 +81,7 @@ ENV_PATH=
 05 */6 * * * bash MY_PATH/jd.sh jd_plantBean
 8 9 * * * bash MY_PATH/jd.sh jd_plus_bean
 11 9 * * * bash MY_PATH/jd.sh jd_rankingList
-1 1,10 * * * bash MY_PATH/jd.sh jd_redPacket
+1 1,10,18 * * * bash MY_PATH/jd.sh jd_redPacket
 27 8 * * * bash MY_PATH/jd.sh jd_sgmh
 26 5 * * * bash MY_PATH/jd.sh jd_shake
 10 0 * * * bash MY_PATH/jd.sh jd_shop
@@ -98,5 +98,4 @@ ENV_PATH=
 15 0-23/4 * * * bash MY_PATH/jd.sh jd_unsubscribe
 1 0 * * * bash MY_PATH/jd.sh jx_cfdtx
 18 3 * * * bash MY_PATH/jd.sh jx_sign
-0 0-23/1 * * * bash MY_PATH/jd.sh jd_super_redrain
 
