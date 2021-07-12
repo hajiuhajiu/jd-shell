@@ -7,6 +7,7 @@ ENV_PATH=
 # 删除 RmLogDaysAgo 指定天数以前的旧日志，本行为不记录日志：
 57 13 * * * bash MY_PATH/rm_log.sh >/dev/null 2>&1
 # 删除 日志
+01 * * * 2 bash /root/jd/del.sh
 01 * * * 1 rm log -r
 
 # 导出所有互助码清单，日志在log/export_sharecodes下(可通过面板或者日记查看)：
