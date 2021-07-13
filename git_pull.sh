@@ -51,6 +51,11 @@ function Git_PullShell {
 ## 更新scripts
 function Git_PullScripts {
   echo -e "更新脚本\n"
+  
+  git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
+  cp /root/jd/sc1/*.* /root/jd/scripts -f
+  rm sc1 -r
+  
   cd ${ScriptsDir}
   git config http.sslVerify "false"
   git config --global http.sslVerify "false"
