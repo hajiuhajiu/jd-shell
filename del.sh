@@ -1,1 +1,1 @@
-rm log -r
+rm /root/jd/log -r
