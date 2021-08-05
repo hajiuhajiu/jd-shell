@@ -102,4 +102,5 @@ ENV_PATH=
 15 0-23/4 * * * bash MY_PATH/jd.sh jd_unsubscribe
 1 0 * * * bash MY_PATH/jd.sh jx_cfdtx
 18 3 * * * bash MY_PATH/jd.sh jx_sign
+5 0,10 * * * bash MY_PATH/jd.sh jd_NewSign
 
