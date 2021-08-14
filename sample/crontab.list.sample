@@ -101,5 +101,6 @@ ENV_PATH=
 18 3 * * * bash MY_PATH/jd.sh jx_sign
 5 0,10 * * * bash MY_PATH/jd.sh jd_NewSign
 15 06,8 * * * bash MY_PATH/jd.sh jd_goldPhone
+10 3,9,18 * * * bash MY_PATH/jd.sh jd_temp
 
 
