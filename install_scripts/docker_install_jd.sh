@@ -4,7 +4,7 @@
 #
 clear
 
-DockerImage="xr2021/jd_shell:v5"   #可以换其它版本， "xr2021/jd_shell:v5"支持多种处理器
+DockerImage="xr2021/jd:v0"   #可
 ShellName=$0
 ShellDir=$(cd "$(dirname "$0")";pwd)
 ContainerName=""
@@ -198,7 +198,7 @@ if [ $NewImage = true ]; then
     if [ $HasImage = true ]; then
         docker stop jd
         docker rm jd
-        docker rmi $(docker images xr2021/jd_shell:v5 -q)
+        docker rmi $(docker images xr2021/jd:v0 -q)
         # docker image rm -f $DockerImage
     fi
     if [ $GetImageType = "Local" ]; then
