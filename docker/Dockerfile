@@ -36,8 +36,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && git clone -b ${JD_SCRIPTS_BRANCH} ${JD_SCRIPTS_URL} ${JD_DIR}/scripts \
     && cd ${JD_DIR}/scripts \
     && npm install \
-    && npm install -g pm2 \
-    && git clone -b ${JD_SCRIPTS2_BRANCH} ${JD_SCRIPTS2_URL} ${JD_DIR}/scripts2 \
+    && npm install -g pm2 \    
     && rm -rf /root/.npm
 WORKDIR ${JD_DIR}
 ENTRYPOINT bash ${JD_DIR}/docker/docker-entrypoint.sh
