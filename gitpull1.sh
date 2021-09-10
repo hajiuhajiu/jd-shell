@@ -48,13 +48,6 @@ function Git_PullShell {
   echo
 }
 
-function Notify_DropTask {
-echo -e "Notify_DropTask\n"
-  cd ${ShellDir}
-  node update.js
-  [ -f ${ContentDropTask} ] && rm -f ${ContentDropTask}
-}
-
 
 ## 更新scripts
 function Git_PullScripts {
@@ -67,9 +60,9 @@ function Git_PullScripts {
   cd ${ScriptsDir}
   git config http.sslVerify "false"
   git config --global http.sslVerify "false"
-  ##git fetch --all
+  git fetch --all
   ExitStatusScripts=$?
-  ##git reset --hard origin/master
+  git reset --hard origin/master
   echo
 }
 
