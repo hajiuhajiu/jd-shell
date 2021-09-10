@@ -104,6 +104,7 @@ function Change_ALL {
 ## js-add.list  如果上述检测文件增加了定时任务，这个文件内容将不为空
 ## js-drop.list 如果上述检测文件删除了定时任务，这个文件内容将不为空
 function Diff_Cron {
+echo -e "Diff_Cron\n"
   if [ -f ${ListCron} ]; then
     if [ -n "${JD_DIR}" ]
     then
@@ -121,6 +122,7 @@ function Diff_Cron {
 
 ## 发送删除失效定时任务的消息
 function Notify_DropTask {
+echo -e "Notify_DropTask\n"
   cd ${ShellDir}
   node update.js
   [ -f ${ContentDropTask} ] && rm -f ${ContentDropTask}
