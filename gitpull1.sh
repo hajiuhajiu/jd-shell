@@ -115,6 +115,7 @@ echo -e "Diff_Cron\n"
     cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort -u > ${ListJs}
     grep -vwf ${ListTask} ${ListJs} > ${ListJsAdd}
     grep -vwf ${ListJs} ${ListTask} > ${ListJsDrop}
+    echo -e "Diff_Cron2\n"
   else
     echo -e "${ListCron} 文件不存在，请先定义你自己的crontab.list...\n"
   fi
