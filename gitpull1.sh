@@ -48,6 +48,13 @@ function Git_PullShell {
   echo
 }
 
+function Notify_DropTask {
+echo -e "Notify_DropTask\n"
+  cd ${ShellDir}
+  node update.js
+  [ -f ${ContentDropTask} ] && rm -f ${ContentDropTask}
+}
+
 
 ## 更新scripts
 function Git_PullScripts {
