@@ -106,7 +106,9 @@ function Change_ALL {
 function Diff_Cron {
 echo -e "Diff_Cron\n"
   if [ -f ${ListCron} ]; then
+    echo -e "Diff_Cron109\n"
     if [ -n "${JD_DIR}" ]
+    echo -e "Diff_Cron111\n"
     then
       grep -E " j[drx]_\w+" ${ListCron} | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
     else
