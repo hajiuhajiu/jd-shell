@@ -54,7 +54,7 @@ function Git_PullScripts {
   echo -e "更新脚本\n"
   
   git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
-  cp /root/jd/sc1/*.* /root/jd/scripts -f
+  cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
   rm sc1 -r
   
   cd ${ScriptsDir}
