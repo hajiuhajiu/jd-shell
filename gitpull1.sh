@@ -32,6 +32,7 @@ function Update_Cron {
   if [ -f ${ListCron} ]; then
     perl -i -pe "s|.+(bash.+git_pull.+log.*)|2 0-23/1 \* \* \* sleep 5 && \1|" ${ListCron}
     crontab ${ListCron}
+    echo -e "Update_Cron\n"
   fi
 }
 
@@ -128,6 +129,7 @@ function Notify_DropTask {
 ## 发送新的定时任务消息
 function Notify_NewTask {
   cd ${ShellDir}
+  echo -e "新的定时任务消息\n"
   node update.js
   [ -f ${ContentNewTask} ] && rm -f ${ContentNewTask}
 }
