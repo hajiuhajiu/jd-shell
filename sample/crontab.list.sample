@@ -25,7 +25,7 @@ ENV_PATH=
 # 非lxk0301/jd_scripts仓库中的脚本不能以“jd_”、“jr_”、“jx_”开头。请在最后保留一个空行。
 0 10 * * * bash MY_PATH/jd.sh jd_bean_change
 30 0-23/4 * * * bash MY_PATH/jd.sh jd_bean_home
-0 0,8 * * * bash MY_PATH/jd.sh jd_bean_sign
+20 1,8 * * * bash MY_PATH/jd.sh jd_bean_sign
 1 7,12 * * * bash MY_PATH/jd.sh jd_beauty
 0 0 * * * bash MY_PATH/jd.sh jd_blueCoin
 0 0 * * * bash MY_PATH/jd.sh jd_blueCoin20
