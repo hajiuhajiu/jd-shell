@@ -30,12 +30,12 @@ ENV_PATH=
 0 0 * * * bash MY_PATH/jd.sh jd_blueCoin
 0 0 * * * bash MY_PATH/jd.sh jd_blueCoin20
 7 8,12,18 * * * bash MY_PATH/jd.sh jd_bookshop
-0 0 * * * bash MY_PATH/jd.sh jd_car
+06 09 * * * bash MY_PATH/jd.sh jd_car
 0 0 * * * bash MY_PATH/jd.sh jd_car_exchange
 20 1,6,18,20 * * * bash MY_PATH/jd.sh jd_cash
 0 0 * * * bash MY_PATH/jd.sh jd_cash_exchange
 30 0-23/2 * * * bash MY_PATH/jd.sh jd_cfd
-0 0,6 * * * bash MY_PATH/jd.sh jd_club_lottery
+08 02,6 * * * bash MY_PATH/jd.sh jd_club_lottery
 18 * * * * bash MY_PATH/jd.sh jd_daily_egg
 13 1,22,23 * * * bash MY_PATH/jd.sh jd_daily_lottery
 35 2,6 * * * bash MY_PATH/jd.sh  jd_daydlt
