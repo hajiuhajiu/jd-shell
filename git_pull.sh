@@ -32,6 +32,7 @@ function Update_Cron {
   if [ -f ${ListCron} ]; then
     perl -i -pe "s|.+(bash.+git_pull.+log.*)|2 0-23/1 \* \* \* sleep 5 && \1|" ${ListCron}
     crontab ${ListCron}
+    echo -e "Update_Cron\n"
   fi
 }
 
@@ -53,15 +54,16 @@ function Git_PullScripts {
   echo -e "更新脚本\n"
   
   git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
-  cp /root/jd/sc1/*.* /root/jd/scripts -f
+  cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
+  cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
   rm sc1 -r
   
   cd ${ScriptsDir}
   git config http.sslVerify "false"
   git config --global http.sslVerify "false"
-  ##git fetch --all
+  ## git fetch --all
   ExitStatusScripts=$?
-  ##git reset --hard origin/master
+  ## git reset --hard origin/master
   echo
 }
 
@@ -103,8 +105,11 @@ function Change_ALL {
 ## js-add.list  如果上述检测文件增加了定时任务，这个文件内容将不为空
 ## js-drop.list 如果上述检测文件删除了定时任务，这个文件内容将不为空
 function Diff_Cron {
+echo -e "Diff_Cron\n"
   if [ -f ${ListCron} ]; then
+   
     if [ -n "${JD_DIR}" ]
+    
     then
       grep -E " j[drx]_\w+" ${ListCron} | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u > ${ListTask}
     else
@@ -113,6 +118,7 @@ function Diff_Cron {
     cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort -u > ${ListJs}
     grep -vwf ${ListTask} ${ListJs} > ${ListJsAdd}
     grep -vwf ${ListJs} ${ListTask} > ${ListJsDrop}
+    echo -e "Diff_Cron2\n"
   else
     echo -e "${ListCron} 文件不存在，请先定义你自己的crontab.list...\n"
   fi
@@ -120,6 +126,7 @@ function Diff_Cron {
 
 ## 发送删除失效定时任务的消息
 function Notify_DropTask {
+echo -e "Notify_DropTask\n"
   cd ${ShellDir}
   node update.js
   [ -f ${ContentDropTask} ] && rm -f ${ContentDropTask}
@@ -128,6 +135,7 @@ function Notify_DropTask {
 ## 发送新的定时任务消息
 function Notify_NewTask {
   cd ${ShellDir}
+  echo -e "新的定时任务消息\n"
   node update.js
   [ -f ${ContentNewTask} ] && rm -f ${ContentNewTask}
 }
