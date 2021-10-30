@@ -8,6 +8,7 @@ ENV_PATH=
 57 13 * * * bash MY_PATH/rm_log.sh >/dev/null 2>&1
 # 删除 日志
 01 10 * * 2,5 bash /root/jd/del.sh 
+01 23 * * * bash /root/jd/del.sh 
 
 # 导出所有互助码清单，日志在log/export_sharecodes下(可通过面板或者日记查看)：
 48 * * * * bash MY_PATH/export_sharecodes.sh
