@@ -9,3 +9,4 @@ rm /root/jd/scripts/jd_jxg.js
 rm /root/jd/scripts/app.4864fa34.js
 rm /root/jd/scripts/app.53f47a0c.js
 rm /root/jd/scripts/app.eb41fc5f.js
+rm /root/jd/scripts/jd_dwnc.py
