@@ -48,7 +48,7 @@ function Git_PullShell {
  fi 
   if [ ! -f "/root/jd/config/config.sh" ];
  then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
- else   
+ else  echo "删除lock文件" 
  fi 
   git fetch --all
   ExitStatusShell=$?
