@@ -68,6 +68,25 @@ function Git_PullScripts {
   echo
 }
 
+## 克隆scripts
+function Git_CloneScripts {
+
+  echo -e "更新脚本\n"
+  
+  git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
+  cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
+  cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
+  rm sc1 -r
+  
+  cd ${ScriptsDir}
+  git config http.sslVerify "false"
+  git config --global http.sslVerify "false"
+  ## git fetch --all
+  ExitStatusScripts=$?
+  ## git reset --hard origin/master
+  echo
+}
+
 ## 更新docker-entrypoint
 function Update_Entrypoint {
   if [[ ${JD_DIR} ]] && [[ $(cat ${ShellDir}/docker/docker-entrypoint.sh) != $(cat /usr/local/bin/docker-entrypoint.sh) ]]; then
