@@ -45,6 +45,7 @@ function Git_PullShell {
   if [ ! -f "/root/jd/.git/index.lock" ];
  then  echo "删除lock文件"
  else   rm /root/jd/.git/index.lock
+  fi
   if [ ! -f "/root/jd/config/config.sh" ];
  then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
   fi
