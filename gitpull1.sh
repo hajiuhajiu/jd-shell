@@ -42,6 +42,15 @@ function Git_PullShell {
   cd ${ShellDir}
   git config http.sslVerify "false"
   git config --global http.sslVerify "false"
+  if [ ! -f "/root/jd/.git/index.lock" ];
+ then  echo "删除lock文件"
+ else   rm /root/jd/.git/index.lock
+  fi
+  if [ ! -f "/root/jd/config/config.sh" ];
+ then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
+  fi
+ 
+ 
   git fetch --all
   ExitStatusShell=$?
   git reset --hard origin/v3
@@ -51,6 +60,25 @@ function Git_PullShell {
 
 ## 更新scripts
 function Git_PullScripts {
+  echo -e "更新脚本\n"
+  
+  git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
+  cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
+  cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
+  rm sc1 -r
+  
+  cd ${ScriptsDir}
+  git config http.sslVerify "false"
+  git config --global http.sslVerify "false"
+  ## git fetch --all
+  ExitStatusScripts=$?
+  ## git reset --hard origin/master
+  echo
+}
+
+## 克隆scripts
+function Git_CloneScripts {
+
   echo -e "更新脚本\n"
   
   git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
