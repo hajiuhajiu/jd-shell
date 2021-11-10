@@ -46,6 +46,10 @@ function Git_PullShell {
  then  echo "删除lock文件"
  else   rm /root/jd/.git/index.lock
  fi 
+  if [ ! -f "/root/jd/config/config.sh" ];
+ then  echo "cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh"
+ else   
+ fi 
   git fetch --all
   ExitStatusShell=$?
   git reset --hard origin/v3
