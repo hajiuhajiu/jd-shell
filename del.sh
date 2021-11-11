@@ -14,7 +14,7 @@ if [ ! -f "/root/jd/scripts/jd_fcwb.js" ];
 then  echo "文件不存在"
 else  rm -f /root/jd/scripts/jd_fcwb.js
 fi
-if [ ! -x /root/jd/.github/workflows]; 
+if [ ! -x " /root/jd/.github/workflows" ]; 
 then echo "文件夹不存在" 
 else rm /root/jd/.github/workflows -r
 fi
