@@ -24,7 +24,7 @@ ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 ShellURL=https://github.com/hajiuhajiu/jd-shell
-ScriptsURL=https://github.com/hajiuhajiu/scripts1
+ScriptsURL=https://github.com/hajiuhajiu/scripts
 
 ## 更新crontab，gitee服务器同一时间限制5个链接，因此每个人更新代码必须错开时间，每次执行git_pull随机生成。
 ## 每天次数随机，更新时间随机，更新秒数随机，至少6次，至多12次，大部分为8-10次，符合正态分布。
@@ -62,7 +62,7 @@ function Git_PullShell {
 function Git_PullScripts {
   echo -e "更新脚本\n"
   
-  git clone https://github.com/hajiuhajiu/scripts1 /root/jd/sc1
+  git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
   cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
   cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
   rm sc1 -r
@@ -81,7 +81,7 @@ function Git_CloneScripts {
 
   echo -e "更新脚本\n"
   
-  git clone https://github.com/hajiuhajiu/scripts1 /root/jd/sc1
+  git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
   cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
   cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
   rm sc1 -r
@@ -294,6 +294,7 @@ function Del_Cron {
 function Add_Cron {
   if [ "${AutoAddCron}" = "true" ] && [ -s ${ListJsAdd} ] && [ -s ${ListCron} ] && [ -d ${ScriptsDir}/node_modules ]; then
     echo -e "开始尝试自动添加定时任务如下：\n"
+    sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
     cat ${ListJsAdd}
     echo
     JsAdd=$(cat ${ListJsAdd})
