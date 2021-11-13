@@ -36,12 +36,14 @@ function Update_Cron {
   fi
 }
 
-## 更新shell
 function Git_PullShell {
   echo -e "更新shell...\n"
   cd ${ShellDir}
   git config http.sslVerify "false"
   git config --global http.sslVerify "false"
+  sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
+  sed -i "s,ENV_PATH=,PATH=$PATH,g" ${JD_DIR}/config/crontab.list
+  echo -e "更新cron\n"
   if [ ! -f "/root/jd/.git/index.lock" ];
  then  echo "删除lock文件"
  else   rm /root/jd/.git/index.lock
@@ -49,7 +51,6 @@ function Git_PullShell {
   if [ ! -f "/root/jd/config/config.sh" ];
  then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
   fi
- 
  
   git fetch --all
   ExitStatusShell=$?
