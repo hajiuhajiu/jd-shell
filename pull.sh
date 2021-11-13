@@ -42,6 +42,9 @@ function Git_PullShell {
   cd ${ShellDir}
   git config http.sslVerify "false"
   git config --global http.sslVerify "false"
+  sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
+  sed -i "s,ENV_PATH=,PATH=$PATH,g" ${JD_DIR}/config/crontab.list
+  echo -e "更新cron\n"
   if [ ! -f "/root/jd/.git/index.lock" ];
  then  echo "删除lock文件"
  else   rm /root/jd/.git/index.lock
