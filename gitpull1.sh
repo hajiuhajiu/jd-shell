@@ -73,6 +73,8 @@ function Git_PullScripts {
   ## git fetch --all
   ExitStatusScripts=$?
   ## git reset --hard origin/master
+  sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
+  sed -i "s,ENV_PATH=,PATH=$PATH,g" ${JD_DIR}/config/crontab.list
   echo
 }
 
