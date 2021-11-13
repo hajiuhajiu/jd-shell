@@ -75,6 +75,7 @@ function Git_PullScripts {
   ## git reset --hard origin/master
   sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
   sed -i "s,ENV_PATH=,PATH=$PATH,g" ${JD_DIR}/config/crontab.list
+  echo -e "更新cron\n"
   echo
 }
 
