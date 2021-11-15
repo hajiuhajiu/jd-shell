@@ -42,4 +42,13 @@ if [ ! -f "/root/jd/scripts/jd_carnivalcity.js" ];
 then  echo ""
 else  rm -f /root/jd/scripts/jd_carnivalcity.js
 fi
+if [ ! -f "/root/jd/scripts/jd_chinajoy.js" ];
+then  echo ""
+else  rm -f /root/jd/scripts/jd_chinajoy.js
+fi
+
+if [ ! -f "/root/jd/scripts/jd_cfdtx.js" ];
+then  echo ""
+else  rm -f /root/jd/scripts/jd_cfdtx.js
+fi
 
