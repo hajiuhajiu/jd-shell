@@ -34,3 +34,8 @@ if [ ! -f "/root/jd/scripts/jd_GoldcoinToGift.js" ];
 then  echo ""
 else  rm -f /root/jd/scripts/jd_GoldcoinToGift.js 
 fi
+if [ ! -f "/root/jd/scripts/jd_ShopSign.js" ];
+then  echo ""
+else  rm -f /root/jd/scripts/jd_ShopSign.js
+fi
+
