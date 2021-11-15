@@ -49,7 +49,7 @@ function Git_PullShell {
  else   rm /root/jd/.git/index.lock
   fi
   if [ ! -f "/root/jd/config/config.sh" ];
- then  cp /root/jd/sample/config.sh.sample /root/jd/config/config1.sh
+ then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
   fi
  
   git fetch --all
