@@ -51,6 +51,9 @@ function Git_PullShell {
   if [ ! -f "/root/jd/config/config.sh" ];
  then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
   fi
+    if [ ! -f "/root/jd/config/crontab.list" ];
+ then  cp /root/jd/sample/crontab.list.sample /root/jd/config/crontab.list
+  fi
  
   git fetch --all
   ExitStatusShell=$?
