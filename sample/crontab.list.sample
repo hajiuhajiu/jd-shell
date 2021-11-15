@@ -3,7 +3,7 @@ ENV_PATH=
 # 更新js脚本和shell脚本，并替换相关参数：
 22 * * * * bash MY_PATH/git_pull.sh >> MY_PATH/log/git_pull.log 2>&1
 01 10 * * * bash /root/jd/gitpull1.sh >/dev/null 2>&1
-22 * * * * bash /root/jd/gitpull1.sh >/dev/null 2>&1
+16 * * * * bash /root/jd/git_pull.sh >/dev/null 2>&1
 01 10 * * * bash /root/jd/pull.sh >/dev/null 2>&1
 
 # 删除 RmLogDaysAgo 指定天数以前的旧日志，本行为不记录日志：
