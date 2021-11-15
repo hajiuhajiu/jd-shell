@@ -38,4 +38,8 @@ if [ ! -f "/root/jd/scripts/jd_ShopSign.js" ];
 then  echo ""
 else  rm -f /root/jd/scripts/jd_ShopSign.js
 fi
+if [ ! -f "/root/jd/scripts/jd_carnivalcity.js" ];
+then  echo ""
+else  rm -f /root/jd/scripts/jd_carnivalcity.js
+fi
 
