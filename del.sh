@@ -26,4 +26,7 @@ if [ ! -f "/root/jd/scripts/jd_djyyj.js" ];
 then  echo "文件不存在"
 else  rm -f /root/jd/scripts/jd_djyyj.js
 fi
-
+if [ ! -f "/root/jd/scripts/JD_extra_cookie.js " ];
+then  echo ""
+else  rm -f /root/jd/scripts/JD_extra_cookie.js 
+fi
