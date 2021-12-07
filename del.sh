@@ -73,4 +73,8 @@ if [ ! -f "ScriptsDir/package-lock.json" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/package-lock.json
 fi
+if [ ! -f "ScriptsDir/MovementFaker.js" ];
+then  echo "目录文件不存在"
+else  rm -f ScriptsDir/MovementFaker.js
+fi
 
