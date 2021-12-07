@@ -63,6 +63,12 @@ then  echo ""
 else  rm -f /root/jd/scripts/jd_cfdtx.js
 fi
 
+if [ ! -f "ScriptsDir/JDJRValidator.js" ];
+then  echo "文件不存在"
+else  rm -f ScriptsDir/JDJRValidator.js
+fi
+
+
 if [ ! -f "ScriptsDir/package-lock.json" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/package-lock.json
