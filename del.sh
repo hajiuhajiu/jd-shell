@@ -77,4 +77,9 @@ if [ ! -f "ScriptsDir/MovementFaker.js" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/MovementFaker.js
 fi
+if [ ! -f "ScriptsDir/jdJxncShareCodes.js" ];
+then  echo "目录文件不存在"
+else  rm -f ScriptsDir/jdJxncShareCodes.js
+fi
+
 
