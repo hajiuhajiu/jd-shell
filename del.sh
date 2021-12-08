@@ -81,5 +81,10 @@ if [ ! -f "ScriptsDir/jdJxncShareCodes.js" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/jdJxncShareCodes.js
 fi
+if [ ! -f "ScriptsDir/jd_sxLottery.js" ];
+then  echo "目录文件不存在"
+else  rm -f ScriptsDir/jd_sxLottery.js
+fi
+
 
 
