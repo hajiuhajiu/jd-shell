@@ -79,5 +79,9 @@ if [ ! -f "ScriptsDir/jd_xtgsign.js" ];
 then  echo " "
 else  rm -f ScriptsDir/jd_xtgsign.js
 fi
+if [ ! -f "ScriptsDir/jd_split.js" ];
+then  echo " "
+else  rm -f ScriptsDir/jd_split.js
+fi
 
 
