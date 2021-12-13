@@ -10,6 +10,7 @@ rm ${ShellDir}/log -r
 cp ${ShellDir}/sharecode ${ShellDir}/log/jd_get_share_code/ -f
 
 rm /root/jd/scripts/jd_dwnc.py
+rm /root/jd/scripts/jd_plus_bean.js
 
 if [ ! -f "/root/jd/scripts/jd_fcwb.js" ];
 then  echo "文件不存在"
