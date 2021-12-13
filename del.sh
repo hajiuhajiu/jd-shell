@@ -9,16 +9,6 @@ cp ${ShellDir}/log/jd_get_share_code/*.*  ${ShellDir}/sharecode -f
 rm ${ShellDir}/log -r
 cp ${ShellDir}/sharecode ${ShellDir}/log/jd_get_share_code/ -f
 
-rm /root/jd/scripts/jd_hyj_jinbi.js
-rm /root/jd/scripts/jd_temp_hyj.js
-rm /root/jd/scripts/jd_NewSign.js
-rm /root/jd/scripts/jd_decompression.js 
-rm /root/jd/scripts/main.01a74c39.js
-rm /root/jd/scripts/app.2c58486f.js
-rm /root/jd/scripts/jd_jxg.js
-rm /root/jd/scripts/app.4864fa34.js
-rm /root/jd/scripts/app.53f47a0c.js
-rm /root/jd/scripts/app.eb41fc5f.js
 rm /root/jd/scripts/jd_dwnc.py
 
 if [ ! -f "/root/jd/scripts/jd_fcwb.js" ];
@@ -85,6 +75,9 @@ if [ ! -f "ScriptsDir/jd_sxLottery.js" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/jd_sxLottery.js
 fi
-
+if [ ! -f "ScriptsDir/jd_xtgsign.js" ];
+then  echo " "
+else  rm -f ScriptsDir/jd_xtgsign.js
+fi
 
 
