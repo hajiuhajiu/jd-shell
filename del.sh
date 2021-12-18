@@ -88,4 +88,8 @@ if [ ! -f "ScriptsDir/jd_goodMorning.js" ];
 then  echo " "
 else  rm -f ScriptsDir/jd_goodMorning.js
 fi
+if [ ! -f "ScriptsDir/jd_xiaolong.js" ];
+then  echo " "
+else  rm -f ScriptsDir/jd_xiaolong.js
 
+fi
