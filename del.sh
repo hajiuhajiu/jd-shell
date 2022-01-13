@@ -98,3 +98,7 @@ if [ ! -f "ScriptsDir/jd_superBrand1.js" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/jd_superBrand1.js
 fi
+if [ ! -f "ScriptsDir/jd_ys.js" ];
+then  echo "目录文件不存在"
+else  rm -f ScriptsDir/jd_ys.js
+fi
