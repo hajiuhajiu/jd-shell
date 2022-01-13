@@ -9,33 +9,6 @@ cp ${ShellDir}/log/jd_get_share_code/*.*  ${ShellDir}/sharecode -f
 rm ${ShellDir}/log -r
 cp ${ShellDir}/sharecode ${ShellDir}/log/jd_get_share_code/ -f
 
-rm /root/jd/scripts/jd_dwnc.py
-rm /root/jd/scripts/jd_plus_bean.js
-
-if [ ! -f "/root/jd/scripts/jd_fcwb.js" ];
-then  echo "文件不存在"
-else  rm -f /root/jd/scripts/jd_fcwb.js
-fi
-if [ ! -x " /root/jd/.github/workflows" ]; 
-then echo "文件夹不存在" 
-else rm /root/jd/.github/workflows -r
-fi
-if [ ! -f "/root/jd/scripts/jd_lol.js" ];
-then  echo "文件不存在"
-else  rm -f /root/jd/scripts/jd_lol.js
-fi
-if [ ! -f "/root/jd/scripts/jd_djyyj.js" ];
-then  echo "文件不存在"
-else  rm -f /root/jd/scripts/jd_djyyj.js
-fi
-if [ ! -f "/root/jd/scripts/JD_extra_cookie.js" ];
-then  echo ""
-else  rm -f /root/jd/scripts/JD_extra_cookie.js 
-fi
-if [ ! -f "/root/jd/scripts/jd_GoldcoinToGift.js" ];
-then  echo ""
-else  rm -f /root/jd/scripts/jd_GoldcoinToGift.js 
-fi
 if [ ! -f "/root/jd/scripts/jd_ShopSign.js" ];
 then  echo ""
 else  rm -f /root/jd/scripts/jd_ShopSign.js
