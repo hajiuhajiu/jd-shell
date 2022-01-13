@@ -93,3 +93,8 @@ then  echo " "
 else  rm -f ScriptsDir/jd_xiaolong.js
 
 fi
+
+if [ ! -f "ScriptsDir/jd_superBrand1.js" ];
+then  echo "目录文件不存在"
+else  rm -f ScriptsDir/jd_superBrand1.js
+fi
