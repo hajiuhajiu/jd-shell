@@ -55,38 +55,38 @@ if [ ! -f "ScriptsDir/jd_sxLottery.js" ];
 then  echo "目录文件不存在"
 else  rm -f ScriptsDir/jd_sxLottery.js
 fi
-if [ ! -f "ScriptsDir/jd_xtgsign.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_xtgsign.js" ];
 then  echo " "
-else  rm -f ScriptsDir/jd_xtgsign.js
+else  rm -f ${ShellDir}/scripts/jd_xtgsign.js
 fi
-if [ ! -f "ScriptsDir/jd_split.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_split.js" ];
 then  echo " "
-else  rm -f ScriptsDir/jd_split.js
+else  rm -f ${ShellDir}/scripts/jd_split.js
 fi
-if [ ! -f "ScriptsDir/jd_goodMorning.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_goodMorning.js" ];
 then  echo " "
-else  rm -f ScriptsDir/jd_goodMorning.js
+else  rm -f ${ShellDir}/scripts/jd_goodMorning.js
 fi
-if [ ! -f "ScriptsDir/jd_xiaolong.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_xiaolong.js" ];
 then  echo " "
-else  rm -f ScriptsDir/jd_xiaolong.js
+else  rm -f ${ShellDir}/scripts/jd_xiaolong.js
 
 fi
 
-if [ ! -f "ScriptsDir/jd_superBrand1.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_superBrand1.js" ];
 then  echo "目录文件不存在"
-else  rm -f ScriptsDir/jd_superBrand1.js
+else  rm -f ${ShellDir}/scripts/jd_superBrand1.js
 fi
-if [ ! -f "ScriptsDir/jd_ys.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_ys.js" ];
 then  echo "目录文件不存在"
-else  rm -f ScriptsDir/jd_ys.js
+else  rm -f ${ShellDir}/scripts/jd_ys.js
 fi
-if [ ! -f "ScriptsDir/jd_city.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
 then  echo "目录文件不存在"
-else  rm -f ScriptsDir/jd_city.js
+else  rm -f ${ShellDir}/scripts/jd_city.js
 fi
-if [ ! -f "ScriptsDir/jd_superBrand1.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_superBrand1.js" ];
 then  echo "目录文件不存在"
-else  rm -f ScriptsDir/jd_superBrand1.js
+else  rm -f ${ShellDir}/scripts/jd_superBrand1.js
 fi
 
