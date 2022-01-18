@@ -36,7 +36,6 @@ function Update_Cron {
   fi
 }
 
-## 更新shell
 function Git_PullShell {
   echo -e "更新shell...\n"
   cd ${ShellDir}
@@ -49,8 +48,12 @@ function Git_PullShell {
  then  echo "删除lock文件"
  else   rm /root/jd/.git/index.lock
   fi
-
- 
+  if [ ! -f "/root/jd/config/config.sh" ];
+ then  cp /root/jd/sample/config.sh.sample /root/jd/config/config.sh
+  fi
+    if [ ! -f "/root/jd/config/crontab.list" ];
+ then  cp /root/jd/sample/crontab.list.sample /root/jd/config/crontab.list
+  fi
  
   git fetch --all
   ExitStatusShell=$?
@@ -74,9 +77,6 @@ function Git_PullScripts {
   ## git fetch --all
   ExitStatusScripts=$?
   ## git reset --hard origin/master
-  sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
-  sed -i "s,ENV_PATH=,PATH=$PATH,g" ${JD_DIR}/config/crontab.list
-  echo -e "更新cron\n"
   echo
 }
 
@@ -298,7 +298,6 @@ function Del_Cron {
 function Add_Cron {
   if [ "${AutoAddCron}" = "true" ] && [ -s ${ListJsAdd} ] && [ -s ${ListCron} ] && [ -d ${ScriptsDir}/node_modules ]; then
     echo -e "开始尝试自动添加定时任务如下：\n"
-    sed -i "s,MY_PATH,${JD_DIR},g" ${JD_DIR}/config/crontab.list
     cat ${ListJsAdd}
     echo
     JsAdd=$(cat ${ListJsAdd})
