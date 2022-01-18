@@ -16,7 +16,7 @@ rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
 rm -f ${ShellDir}/scripts/jd_hello_wind_xtg.js
 rm -f ${ShellDir}/scripts/jd_xiaolong.js
 
-rm -f ${ShellDir}/scripts/jd_superBrand1.js
+rm -f ${ShellDir}/scripts/ jd_hotNeight.js
 rm -f ${ShellDir}/scripts/jd_superBrand1.js
 rm -f ${ShellDir}/scripts/jd_superBrand1.js
 rm -f ${ShellDir}/scripts/jd_superBrand1.js
