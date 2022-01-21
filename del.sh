@@ -15,90 +15,23 @@ rm -f ${ShellDir}/scripts/jd_sevenDay.js
 rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
 rm -f ${ShellDir}/scripts/jd_hello_wind_xtg.js
 rm -f ${ShellDir}/scripts/jd_xiaolong.js
-
 rm -f ${ShellDir}/scripts/ jd_hotNeight.js
+rm -f ${ShellDir}/scripts/jd_carnivalcity.js
+rm -f ${ShellDir}/scripts/JDJRValidator.js
+rm -f ${ShellDir}/scripts/JD_DailyBonus.js
+rm -f ${ShellDir}/scripts/jd_ShopSign.js
+rm -f ${ShellDir}/scripts/jd_chinajoy.js
+rm -f ${ShellDir}/scripts/jd_cfdtx.js
+rm -f ${ShellDir}/scripts/jd_sxLottery.js
+rm -f ${ShellDir}/scripts/jd_xtgsign.js
+rm -f ${ShellDir}/scripts/jd_split.js
+rm -f ${ShellDir}/scripts/jd_goodMorning.js
+rm -f ${ShellDir}/scripts/jd_ys.js
+rm -f ${ShellDir}/scripts/jd_city.js
+rm -f ${ShellDir}/scripts/JD_DailyBonus.js
 rm -f ${ShellDir}/scripts/jd_superBrand1.js
-rm -f ${ShellDir}/scripts/jd_superBrand1.js
-rm -f ${ShellDir}/scripts/jd_superBrand1.js
 
-
-
-
-
-
-
-if [ ! -f "/root/jd/scripts/jd_ShopSign.js" ];
-then  echo ""
-else  rm -f /root/jd/scripts/jd_ShopSign.js
-fi
-if [ ! -f "/root/jd/scripts/jd_carnivalcity.js" ];
-then  echo ""
-else  rm -f /root/jd/scripts/jd_carnivalcity.js
-fi
-if [ ! -f "/root/jd/scripts/jd_chinajoy.js" ];
-then  echo ""
-else  rm -f /root/jd/scripts/jd_chinajoy.js
-fi
-
-if [ ! -f "/root/jd/scripts/jd_cfdtx.js" ];
-then  echo ""
-else  rm -f /root/jd/scripts/jd_cfdtx.js
-fi
-
-if [ ! -f "ScriptsDir/JDJRValidator.js" ];
-then  echo "文件不存在"
-else  rm -f ScriptsDir/JDJRValidator.js
-fi
-
-
-if [ ! -f "ScriptsDir/package-lock.json" ];
-then  echo "目录文件不存在"
-else  rm -f ScriptsDir/package-lock.json
-fi
-if [ ! -f "ScriptsDir/MovementFaker.js" ];
-then  echo "目录文件不存在"
-else  rm -f ScriptsDir/MovementFaker.js
-fi
-if [ ! -f "ScriptsDir/jdJxncShareCodes.js" ];
-then  echo "目录文件不存在"
-else  rm -f ScriptsDir/jdJxncShareCodes.js
-fi
-if [ ! -f "ScriptsDir/jd_sxLottery.js" ];
-then  echo "目录文件不存在"
-else  rm -f ScriptsDir/jd_sxLottery.js
-fi
-if [ ! -f "${ShellDir}/scripts/jd_xtgsign.js" ];
-then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_xtgsign.js
-fi
-if [ ! -f "${ShellDir}/scripts/jd_split.js" ];
-then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_split.js
-fi
-if [ ! -f "${ShellDir}/scripts/jd_goodMorning.js" ];
-then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_goodMorning.js
-fi
-if [ ! -f "${ShellDir}/scripts/jd_xiaolong.js" ];
-then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_xiaolong.js
-
-fi
-
-if [ ! -f "${ShellDir}/scripts/jd_superBrand1.js" ];
-then  echo "目录文件不存在"
-else  rm -f ${ShellDir}/scripts/jd_superBrand1.js
-fi
-if [ ! -f "${ShellDir}/scripts/jd_ys.js" ];
-then  echo "目录文件不存在"
-else  rm -f ${ShellDir}/scripts/jd_ys.js
-fi
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
 then  echo "目录文件不存在"
 else  rm -f ${ShellDir}/scripts/jd_city.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_superBrand1.js" ];
-then  echo "目录文件不存在"
-else  rm -f ${ShellDir}/scripts/jd_superBrand1.js
-fi
-
