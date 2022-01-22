@@ -28,7 +28,9 @@ rm -f ${ShellDir}/scripts/jd_split.js
 rm -f ${ShellDir}/scripts/jd_goodMorning.js
 rm -f ${ShellDir}/scripts/jd_ys.js
 rm -f ${ShellDir}/scripts/jd_city.js
-rm -f ${ShellDir}/scripts/JD_DailyBonus.js
+rm -f ${ShellDir}/scripts/jd_travel.js
+rm -f ${ShellDir}/scripts/jd_travel_shop.js
+rm -f ${ShellDir}/scripts/jd_travel_help.js
 rm -f ${ShellDir}/scripts/smiek2221_sign_graphics_validate.js
 
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
