@@ -32,7 +32,11 @@ rm -f ${ShellDir}/scripts/jd_travel.js
 rm -f ${ShellDir}/scripts/jd_travel_shop.js
 rm -f ${ShellDir}/scripts/jd_travel_help.js
 rm -f ${ShellDir}/scripts/smiek2221_sign_graphics_validate.js
-
+rm -f ${ShellDir}/scripts/jd_nhs_red3.js
+rm -f ${ShellDir}/scripts/jd_nhs_red2.js
+rm -f ${ShellDir}/scripts/jd_nhs_red1.js
+rm -f ${ShellDir}/scripts/jd_nhs_red.js
+rm -f ${ShellDir}/scripts/jd_opencard6.js
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
 then  echo "目录文件不存在"
 else  rm -f ${ShellDir}/scripts/jd_city.js
