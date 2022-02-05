@@ -37,6 +37,10 @@ rm -f ${ShellDir}/scripts/jd_nhs_red2.js
 rm -f ${ShellDir}/scripts/jd_nhs_red1.js
 rm -f ${ShellDir}/scripts/jd_nhs_red.js
 rm -f ${ShellDir}/scripts/jd_opencard6.js
+rm -f ${ShellDir}/scripts/jd_festival.js
+rm -f ${ShellDir}/scripts/jd_travel
+
+
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
 then  echo "目录文件不存在"
 else  rm -f ${ShellDir}/scripts/jd_city.js
