@@ -40,6 +40,7 @@ rm -f ${ShellDir}/scripts/jd_opencard6.js
 rm -f ${ShellDir}/scripts/jd_festival.js
 rm -f ${ShellDir}/scripts/jd_sevenday.js
 rm -f ${ShellDir}/scripts/jd_order.js
+rm -f ${ShellDir}/scripts/jd_star.js
 
 
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
