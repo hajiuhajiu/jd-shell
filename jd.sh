@@ -125,7 +125,7 @@ function Combin_Sub() {
 function Combin_All() {
   export JD_COOKIE=$(Combin_Sub Cookie)
   ## 东东农场(jd_fruit.js)
-  export FRUITSHARECODES=$(Combin_Sub ForOtherFruit "47185c0af3b04054a6eba856fa5f974d@9e195230d84e405cb0b5d449555b2b6b@f418bcd262c14b8fb221afe628bcc2a6@3aada576c8e749a988b483c560e5d4ab@46f8cdd7d0894ccaa3a387858b9c8eb2@e508c2ca55df409081d85c91dd7f6865@c6952a52386c4c538bb4bbd69d14e085@ed9ca6042879426a8960f69d1dcfa089")
+  export FRUITSHARECODES=$(Combin_Sub ForOtherFruit "")
   ## 东东萌宠(jd_pet.js)
   export PETSHARECODES=$(Combin_Sub ForOtherPet "")
   ## 种豆得豆(jd_plantBean.js)
