@@ -43,6 +43,7 @@ rm -f ${ShellDir}/scripts/jd_order.js
 rm -f ${ShellDir}/scripts/jd_star.js
 rm -f ${ShellDir}/scripts/jd_dayday_ysq.js
 rm -f ${ShellDir}/scripts/jd_year.js
+rm -f ${ShellDir}/scripts/jd_city.js
 
 
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
