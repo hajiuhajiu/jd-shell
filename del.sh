@@ -34,7 +34,7 @@ rm -f ${ShellDir}/scripts/jd_travel_help.js
 rm -f ${ShellDir}/scripts/smiek2221_sign_graphics_validate.js
 rm -f ${ShellDir}/scripts/jd_nhs_red3.js
 rm -f ${ShellDir}/scripts/jd_nhs_red2.js
-rm -f ${ShellDir}/scripts/jd_nhs_red1.js
+rm -f ${ShellDir}/scripts/jx_tokens.js
 rm -f ${ShellDir}/scripts/jd_nhs_red.js
 rm -f ${ShellDir}/scripts/jd_opencard6.js
 rm -f ${ShellDir}/scripts/jd_festival.js
