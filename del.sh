@@ -50,6 +50,7 @@ rm -f ${ShellDir}/scripts/jd_mpdzcar.js
 rm -f ${ShellDir}/scripts/jd_mpdzcar_help.js
 rm -f ${ShellDir}/scripts/jd_opencard5.js
 rm -f ${ShellDir}/scripts/jd_ttpt.js
+rm -f ${ShellDir}/scripts/jd_sxLottery.js 
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
 then  echo "目录文件不存在"
 else  rm -f ${ShellDir}/scripts/jd_city.js
