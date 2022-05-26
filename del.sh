@@ -49,6 +49,14 @@ rm -f ${ShellDir}/scripts/jd_mpdzcar_game.js
 rm -f ${ShellDir}/scripts/jd_mpdzcar.js
 rm -f ${ShellDir}/scripts/jd_mpdzcar_help.js
 rm -f ${ShellDir}/scripts/jd_opencard5.js
+rm -f ${ShellDir}/scripts/jd_big_winner.js
+rm -f ${ShellDir}/scripts/jd_blueCoin.js
+rm -f ${ShellDir}/scripts/jd_blueCoin.js
+rm -f ${ShellDir}/scripts/jd_car_exchange.js
+rm -f ${ShellDir}/scripts/jd_cart_remove.js
+rm -f ${ShellDir}/scripts/jd_carnivalcity.js
+rm -f ${ShellDir}/scripts/jd_ttpt.js
+rm -f ${ShellDir}/scripts/jd_ttpt.js
 rm -f ${ShellDir}/scripts/jd_ttpt.js
 rm -f ${ShellDir}/scripts/jd_sxLottery.js 
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
