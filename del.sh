@@ -55,7 +55,7 @@ rm -f ${ShellDir}/scripts/jd_blueCoin.js
 rm -f ${ShellDir}/scripts/jd_car_exchange.js
 rm -f ${ShellDir}/scripts/jd_cart_remove.js
 rm -f ${ShellDir}/scripts/jd_carnivalcity.js
-rm -f ${ShellDir}/scripts/jd_ttpt.js
+rm -f ${ShellDir}/scripts/jd_hyjn.js
 rm -f ${ShellDir}/scripts/jd_ttpt.js
 rm -f ${ShellDir}/scripts/jd_ttpt.js
 rm -f ${ShellDir}/scripts/jd_sxLottery.js 
