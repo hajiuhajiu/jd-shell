@@ -10,7 +10,7 @@ cp ${ShellDir}/sharecode ${ShellDir}/log/jd_get_share_code/ -f
 #删除失效脚本
 
 rm -f ${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js
-rm -f ${ShellDir}/scripts/jd_nhs_red1.js 
+rm -f ${ShellDir}/scripts/jd_hyjn1.js.js 
 rm -f ${ShellDir}/scripts/jd_DrawEntrance.js
 rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
 rm -f ${ShellDir}/scripts/jd_hello_wind_xtg.js
