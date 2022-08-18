@@ -58,7 +58,7 @@ rm -f ${ShellDir}/scripts/jd_carnivalcity.js
 rm -f ${ShellDir}/scripts/jd_hyjn.js
 rm -f ${ShellDir}/scripts/jd_ttpt.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
-rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618jk.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
