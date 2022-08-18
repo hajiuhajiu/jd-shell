@@ -65,7 +65,7 @@ rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_sxLottery.js 
-if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_19e.js" ];
 then  echo "目录文件不存在"
-else  rm -f ${ShellDir}/scripts/jd_city.js
+else  rm -f ${ShellDir}/scripts/jd_19e.js
 fi
