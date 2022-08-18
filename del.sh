@@ -80,13 +80,13 @@ if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_blueCoin20.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_blueCoin20.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_car.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_car.js
 fi
 if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
 then  echo " "
