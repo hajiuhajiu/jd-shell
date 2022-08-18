@@ -57,7 +57,13 @@ rm -f ${ShellDir}/scripts/jd_cart_remove.js
 rm -f ${ShellDir}/scripts/jd_carnivalcity.js
 rm -f ${ShellDir}/scripts/jd_hyjn.js
 rm -f ${ShellDir}/scripts/jd_ttpt.js
-rm -f ${ShellDir}/scripts/jd_ttpt.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_sxLottery.js 
 if [ ! -f "${ShellDir}/scripts/jd_city.js" ];
 then  echo "目录文件不存在"
