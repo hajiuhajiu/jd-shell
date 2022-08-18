@@ -60,8 +60,8 @@ rm -f ${ShellDir}/scripts/jd_ttpt.js
 rm -f ${ShellDir}/scripts/jd_bookshop.js
 rm -f ${ShellDir}/scripts/jd_618jk.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
-rm -f ${ShellDir}/scripts/jd_618cj.js
-rm -f ${ShellDir}/scripts/jd_618cj.js
+rm -f ${ShellDir}/scripts/jd_carnivalcity_help.js
+rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_sxLottery.js 
