@@ -27,20 +27,56 @@ if [ ! -f "${ShellDir}/scripts/jd_redEnvelope1.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
 fi
-rm -f ${ShellDir}/scripts/
-rm -f ${ShellDir}/scripts/jd_hello_wind_xtg.js
-rm -f ${ShellDir}/scripts/jd_xiaolong.js
-rm -f ${ShellDir}/scripts/ jd_hotNeight.js
-rm -f ${ShellDir}/scripts/jd_carnivalcity.js
-rm -f ${ShellDir}/scripts/JDJRValidator.js
+if [ ! -f "${ShellDir}/scripts/jd_plantBeann" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_plantBeann
+fi
+
+if [ ! -f "${ShellDir}/scripts/jd_hello_wind_xtg.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_hello_wind_xtg.js
+fi
+
+if [ ! -f "${ShellDir}/scripts/jd_xiaolong.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_xiaolong.js
+fi
+
+if [ ! -f "${ShellDir}/scripts/jd_hotNeight.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_hotNeight.js
+fi
+
+if [ ! -f "${ShellDir}/scripts/jd_carnivalcity.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_carnivalcity.js
+fi
+
+if [ ! -f "${ShellDir}/scripts/JDJRValidator.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/JDJRValidator.js
+fi
+if [ ! -f "${ShellDir}/scripts/jd_ShopSign.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_ShopSign.js
+fi
+if [ ! -f "${ShellDir}/scripts/jd_cfdtx.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_cfdtx.js
+fi
+if [ ! -f "${ShellDir}/scripts/jd_sxLottery.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_sxLottery.js
+fi
+if [ ! -f "${ShellDir}/scripts/jd_goodMorning.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_goodMorning.js
+fi
+
+
 rm -f ${ShellDir}/scripts/JD_DailyBonus.js
-rm -f ${ShellDir}/scripts/jd_ShopSign.js
-rm -f ${ShellDir}/scripts/jd_chinajoy.js
-rm -f ${ShellDir}/scripts/jd_cfdtx.js
-rm -f ${ShellDir}/scripts/jd_sxLottery.js
 rm -f ${ShellDir}/scripts/jd_xtgsign.js
 rm -f ${ShellDir}/scripts/jd_split.js
-rm -f ${ShellDir}/scripts/jd_goodMorning.js
 rm -f ${ShellDir}/scripts/jd_ys.js
 rm -f ${ShellDir}/scripts/jd_city.js
 rm -f ${ShellDir}/scripts/jd_travel.js
