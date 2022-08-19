@@ -8,11 +8,26 @@ cp ${ShellDir}/log/jd_get_share_code/*.*  ${ShellDir}/sharecode -f
 rm ${ShellDir}/log -r
 cp ${ShellDir}/sharecode ${ShellDir}/log/jd_get_share_code/ -f
 #删除失效脚本
+if [ ! -f "${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js
+fi
 
-rm -f ${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js
-rm -f ${ShellDir}/scripts/jd_hyjn1.js.js 
-rm -f ${ShellDir}/scripts/jd_DrawEntrance.js
-rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
+if [ ! -f "${ShellDir}/scripts/jd_hyjn1.js.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_hyjn1.js.js 
+fi
+
+if [ ! -f "${ShellDir}/scripts/jd_DrawEntrance.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_DrawEntrance.js 
+fi
+
+if [ ! -f "${ShellDir}/scripts/jd_redEnvelope1.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
+fi
+rm -f ${ShellDir}/scripts/
 rm -f ${ShellDir}/scripts/jd_hello_wind_xtg.js
 rm -f ${ShellDir}/scripts/jd_xiaolong.js
 rm -f ${ShellDir}/scripts/ jd_hotNeight.js
