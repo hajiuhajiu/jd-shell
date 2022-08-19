@@ -52,17 +52,8 @@ rm -f ${ShellDir}/scripts/jd_opencard5.js
 rm -f ${ShellDir}/scripts/jd_big_winner.js
 rm -f ${ShellDir}/scripts/jd_blueCoin.js
 rm -f ${ShellDir}/scripts/jd_blueCoin.js
-rm -f ${ShellDir}/scripts/jd_car_exchange.js
-rm -f ${ShellDir}/scripts/jd_cart_remove.js
-rm -f ${ShellDir}/scripts/jd_carnivalcity.js
-rm -f ${ShellDir}/scripts/jd_hyjn.js
-rm -f ${ShellDir}/scripts/jd_ttpt.js
-rm -f ${ShellDir}/scripts/jd_bookshop.js
 rm -f ${ShellDir}/scripts/jd_618jk.js
-rm -f ${ShellDir}/scripts/jd_618cj.js
 rm -f ${ShellDir}/scripts/jd_carnivalcity_help.js
-rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
-rm -f ${ShellDir}/scripts/jd_618cj.js
 
 if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
 then  echo " "
@@ -88,33 +79,33 @@ if [ ! -f "${ShellDir}/scripts/jd_car.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_car.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_618cj.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_618cj.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_bookshop.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_bookshop.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_carnivalcity.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_carnivalcity.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_ttpt.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_ttpt.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_car_exchange.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_car_exchange.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_hyjn.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_hyjn.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_cart_remove.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_carnivalcityjd_carnivalcity_help.js
+else  rm -f ${ShellDir}/scripts/jd_cart_remove.js
 fi
 if [ ! -f "${ShellDir}/scripts/jd_19e.js" ];
 then  echo " "
