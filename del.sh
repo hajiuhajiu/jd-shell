@@ -68,9 +68,9 @@ if [ ! -f "${ShellDir}/scripts/jd_sxLottery.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_sxLottery.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_goodMorning.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_xiaomi.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_goodMorning.js
+else  rm -f ${ShellDir}/scripts/jd_xiaomi.js
 fi
 
 
