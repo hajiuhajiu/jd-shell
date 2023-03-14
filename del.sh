@@ -36,9 +36,9 @@ if [ ! -f "${ShellDir}/scripts/jd_tanwei.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_tanwei.js
 fi
-if [ ! -f "${ShellDir}/scripts/jd_tanwei.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_mnyyn.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_tanwei.js
+else  rm -f ${ShellDir}/scripts/jd_mnyyn.js
 fi
 if [ ! -f "${ShellDir}/scripts/jd_DrawEntrance.js" ];
 then  echo " "
