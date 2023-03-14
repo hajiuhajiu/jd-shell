@@ -18,6 +18,12 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_hyjn1.js.js 
 fi
 
+
+if [ ! -f "${ShellDir}/scripts/jd_zsign.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_zsign.js
+fi
+
 if [ ! -f "${ShellDir}/scripts/jd_DrawEntrance.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_DrawEntrance.js 
