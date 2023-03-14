@@ -35,6 +35,11 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_wishingPool.js
 fi
 
+if [ ! -f "${ShellDir}/scripts/smartExecute.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/smartExecute.js
+fi
+
 if [ ! -f "${ShellDir}/scripts/jd_redEnvelope1.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_redEnvelope1.js
