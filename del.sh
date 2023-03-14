@@ -17,6 +17,10 @@ if [ ! -f "${ShellDir}/scripts/jd_hyjn1.js.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_hyjn1.js.js 
 fi
+if [ ! -f "${ShellDir}/scripts/jd_tyt.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_tyt.js
+fi
 
 if [ ! -f "${ShellDir}/scripts/jd_xinruimz.js" ];
 then  echo " "
