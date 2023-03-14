@@ -32,6 +32,10 @@ if [ ! -f "${ShellDir}/scripts/jd_DrawEntrance.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_DrawEntrance.js 
 fi
+if [ ! -f "${ShellDir}/scripts/jd_wxgame.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_wxgame.js
+fi
 
 if [ ! -f "${ShellDir}/scripts/jx_sign_xd.js" ];
 then  echo " "
