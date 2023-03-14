@@ -23,6 +23,10 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_DrawEntrance.js 
 fi
 
+if [ ! -f "${ShellDir}/scripts/jx_sign_xd.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jx_sign_xd.js
+fi
 
 if [ ! -f "${ShellDir}/scripts/jd_wishingPool.js" ];
 then  echo " "
