@@ -32,6 +32,14 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_zsign.js
 fi
 
+if [ ! -f "${ShellDir}/scripts/jd_tanwei.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_tanwei.js
+fi
+if [ ! -f "${ShellDir}/scripts/jd_tanwei.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_tanwei.js
+fi
 if [ ! -f "${ShellDir}/scripts/jd_DrawEntrance.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_DrawEntrance.js 
