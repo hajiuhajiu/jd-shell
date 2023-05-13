@@ -209,3 +209,4 @@ if [ ! -f "${ShellDir}/scripts/jd_19e.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_19e.js
 fi
+pnpm install -g moment
