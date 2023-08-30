@@ -70,6 +70,10 @@ function Git_PullScripts {
   cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
   cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
   rm sc1 -r
+
+    git clone https://github.com/hajiuhajiu/scripts/function /root/jd/sc2
+  cp -Rf /root/jd/sc2/*.* /root/jd/scripts/function 
+  rm sc2 -r
   
   cd ${ScriptsDir}
   git config http.sslVerify "false"
