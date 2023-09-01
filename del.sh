@@ -65,6 +65,18 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_wishingPool.js
 fi
 
+if [ ! -f "${ShellDir}/scripts/jd_cash.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_cash.js
+fi
+if [ ! -f "${ShellDir}/scripts/jd_cash_exchange.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jd_cash_exchange.js
+fi
+if [ ! -f "${ShellDir}/scripts/jdDreamFactoryShareCodes.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/jdDreamFactoryShareCodes.js
+fi
 if [ ! -f "${ShellDir}/scripts/smartExecute.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/smartExecute.js
