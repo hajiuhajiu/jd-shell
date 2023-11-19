@@ -27,9 +27,9 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jdPetShareCodes.js
 fi
 
-if [ ! -f "${ShellDir}/scripts/jd_zsign.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_djyyj.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_zsign.js
+else  rm -f ${ShellDir}/scripts/jd_djyyj.js
 fi
 
 if [ ! -f "${ShellDir}/scripts/jd_tanwei.js" ];
