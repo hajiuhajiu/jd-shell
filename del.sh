@@ -13,9 +13,9 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js
 fi
 
-if [ ! -f "${ShellDir}/scripts/jd_hyjn1.js.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_cfd_help.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_hyjn1.js.js 
+else  rm -f ${ShellDir}/scripts/jd_cfd_help.js 
 fi
 if [ ! -f "${ShellDir}/scripts/jd_tyt.js" ];
 then  echo " "
