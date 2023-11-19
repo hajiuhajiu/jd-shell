@@ -17,9 +17,9 @@ if [ ! -f "${ShellDir}/scripts/jd_cfd_help.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_cfd_help.js 
 fi
-if [ ! -f "${ShellDir}/scripts/jd_tyt.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_cfd_mooncake.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_tyt.js
+else  rm -f ${ShellDir}/scripts/jd_cfd_mooncake.js
 fi
 
 if [ ! -f "${ShellDir}/scripts/jdPetShareCodes.js" ];
