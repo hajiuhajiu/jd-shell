@@ -32,9 +32,9 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_djyyj.js
 fi
 
-if [ ! -f "${ShellDir}/scripts/jd_tanwei.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_11.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_tanwei.js
+else  rm -f ${ShellDir}/scripts/jd_11.js
 fi
 if [ ! -f "${ShellDir}/scripts/jd_mnyyn.js" ];
 then  echo " "
