@@ -132,6 +132,17 @@ then  echo " "
 else  rm -f ${ShellDir}/scripts/jd_xiaomi.js
 fi
 
+rm -f ${ShellDir}/scripts/jd_bean_changes.js 
+rm -f ${ShellDir}/scripts/jd_beauty.js 
+rm -f ${ShellDir}/scripts/jd_big_winner.js
+rm -f ${ShellDir}/scripts/jd_blueCoin.js 
+rm -f ${ShellDir}/scripts/jd_cfd_pearl_ex.js 
+rm -f ${ShellDir}/scripts/jd_cjhz.js  
+rm -f ${ShellDir}/scripts/jd_ddly.js    
+rm -f ${ShellDir}/scripts/jd_ddworld.js    
+rm -f ${ShellDir}/scripts/jd_ddworld_exchange.js
+rm -f ${ShellDir}/scripts/jd_dreamFactory.js
+rm -f ${ShellDir}/scripts/jd_genz.js    
 
 rm -f ${ShellDir}/scripts/jd_connoisseur.js
 rm -f ${ShellDir}/scripts/jd_connoisseur.js
