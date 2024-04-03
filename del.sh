@@ -12,6 +12,11 @@ if [ ! -f "${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js" ];
 then  echo " "
 else  rm -f ${ShellDir}/scripts/smiek2221_JDJRValidator_Pure.js
 fi
+if [ ! -f "${ShellDir}/scripts/JDJRValidator_Pure.js" ];
+then  echo " "
+else  rm -f ${ShellDir}/scripts/JDJRValidator_Pure.js
+fi
+
 
 if [ ! -f "${ShellDir}/scripts/jd_cfd_help.js" ];
 then  echo " "
