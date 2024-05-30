@@ -71,6 +71,10 @@ function Git_PullScripts {
   cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
   mkdir /root/jd/scripts/function
   cp -Rf /root/jd/sc1/function/*.* /root/jd/scripts/function
+  mkdir /root/jd/scripts/utils
+  cp -Rf /root/jd/sc1/utils/*.* /root/jd/scripts/utils
+  mkdir /root/jd/scripts/utils/proenv
+  cp -Rf /root/jd/sc1/utils/proenv/*.* /root/jd/scripts/utils/proenv
   rm sc1 -r
 
 
