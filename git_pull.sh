@@ -75,6 +75,8 @@ function Git_PullScripts {
   cp -Rf /root/jd/sc1/utils/*.* /root/jd/scripts/utils
   mkdir /root/jd/scripts/utils/proenv
   cp -Rf /root/jd/sc1/utils/proenv/*.* /root/jd/scripts/utils/proenv
+   mkdir /root/jd/scripts/utils/cache
+  cp -Rf /root/jd/sc1/utils/cache/*.* /root/jd/scripts/utils/cache
   rm sc1 -r
 
 
