@@ -69,7 +69,7 @@ function Git_PullScripts {
   git clone https://github.com/hajiuhajiu/scripts /root/jd/sc1
   cp -Rf /root/jd/sc1/*.* /root/jd/scripts 
   cp -Rf /root/jd/sc1/docker/*.* /root/jd/scripts/docker
- if [ ! -f "/root/jd/scripts/function" ];
+ if [ ! -d "/root/jd/scripts/function" ];
  then  mkdir /root/jd/scripts/function
  else  cp -Rf /root/jd/sc1/function/*.* /root/jd/scripts/function
  fi
