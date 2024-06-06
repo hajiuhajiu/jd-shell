@@ -74,16 +74,30 @@ function Git_PullScripts {
  else  cp -Rf /root/jd/sc1/function/*.* /root/jd/scripts/function
  fi
 
-  mkdir /root/jd/scripts/utils
-  cp -Rf /root/jd/sc1/utils/*.* /root/jd/scripts/utils
-  mkdir /root/jd/scripts/utils/proenv
+ if [ ! -d "/root/jd/scripts/utils" ];
+ then  mkdir /root/jd/scripts/utils
+ else  cp -Rf /root/jd/sc1/utils/*.* /root/jd/scripts/utils
+ fi
+
+  if [ ! -d "/root/jd/scripts/utils/proenv" ];
+ then  mkdir /root/jd/scripts/utils/proenv
   cp -Rf /root/jd/sc1/utils/proenv/*.* /root/jd/scripts/utils/proenv
-   mkdir /root/jd/scripts/utils/cache
+ fi
+
+  if [ ! -d "/root/jd/scripts/utils/cache" ];
+ then  mkdir /root/jd/scripts/utils/cache
   cp -Rf /root/jd/sc1/utils/cache/*.* /root/jd/scripts/utils/cache
-  mkdir /root/jd/scripts/utils/Rebels
-  cp -Rf /root/jd/sc1/utils/Rebels/*.* /root/jd/scripts/utils/Rebels
-   mkdir /root/jd/scripts/function/assets
-  cp -Rf /root/jd/sc1/function/assets/*.* /root/jd/scripts/function/assets
+ fi
+  if [ ! -d "/root/jd/scripts/utils/Rebels" ];
+ then  mkdir /root/jd/scripts/utils/Rebels
+ else cp -Rf /root/jd/sc1/utils/Rebels/*.* /root/jd/scripts/utils/Rebels
+ fi
+
+ if [ ! -d "/root/jd/scripts/function/assets" ];
+ then  mkdir /root/jd/scripts/function/assets
+ else  cp -Rf /root/jd/sc1/function/assets/*.* /root/jd/scripts/function/assets
+ fi
+
   rm sc1 -r
 
 
