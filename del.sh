@@ -18,9 +18,9 @@ else  rm -f ${ShellDir}/scripts/JDJRValidator_Pure.js
 fi
 
 
-if [ ! -f "${ShellDir}/scripts/jd_cfd_help.js" ];
+if [ ! -f "${ShellDir}/scripts/jd_tyt.js" ];
 then  echo " "
-else  rm -f ${ShellDir}/scripts/jd_cfd_help.js 
+else  rm -f ${ShellDir}/scripts/jd_tyt.js 
 fi
 if [ ! -f "${ShellDir}/scripts/jd_cfd_mooncake.js" ];
 then  echo " "
